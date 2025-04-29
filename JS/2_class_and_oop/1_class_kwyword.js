@@ -18,7 +18,7 @@ class IdolModel{
     }
 
     sayName(){
-        return `안녕하세요 저는 안유진입니다.`
+        return `안녕하세요 저는 ${this.name}입니다.`;
     }
 }
 
@@ -39,3 +39,10 @@ console.log(eseo);
 
 console.log(yuJin.name);
 console.log(yuJin.year);
+
+console.log(yuJin.sayName());
+console.log(wonYoung.sayName());
+console.log(liz.sayName());
+
+console.log(typeof IdolModel); // class = function(함수)이다
+console.log(typeof yuJin); // class로 생성한 인스턴스는 Object이다
